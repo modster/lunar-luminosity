@@ -3,9 +3,13 @@ export interface Props {
 	title: string;
 	body: string;
 	href: string;
+	sample: string;
+	price: string;
+	tags: {};
 }
 
 const { href, title, body } = Astro.props;
+
 ---
 
 <li class="link-card">
@@ -19,6 +23,8 @@ const { href, title, body } = Astro.props;
 		</p>
 	</a>
 </li>
+
+
 <style>
 	.link-card {
 		list-style: none;
@@ -43,6 +49,51 @@ const { href, title, body } = Astro.props;
 		background-color: white;
 		opacity: 0.8;
 	}
+}
+	.mona-sans {
+		font-family: Mona Sans;
+	}
+	.mona-serif {
+		font-family: Mona Serif;
+	}
+	.cascadia-mono {
+		font-family: Cascadia Mono;
+	}
+	.cascadia-code {
+		font-family: Cascadia Code;
+	}
+	.fira-code {
+		font-family: Fira Code;
+	}
+	.fira-mono {
+		font-family: Fira Mono;
+	}
+	.roboto-mono {
+		font-family: Roboto Mono;
+	}
+	.roboto-slab {
+		font-family: Roboto Slab;
+	}
+	.roboto {
+		font-family: Roboto;
+	}
+	/* todo */
+	.hubot-sans {
+		font-family: Hubot Sans;
+	}
+	.hubot-sans {
+		font-family: Hubot-Sans;
+	}
+	.ibm-plex-mono {
+		font-family: IBM Plex Mono;
+	}
+	.ibm-plex-sans {
+		font-family: IBM Plex Sans;
+	}
+	.ibm-plex-serif {
+		font-family: IBM Plex Serif;
+	}
+
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;
